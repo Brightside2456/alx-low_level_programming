@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- *Printing the sizes of datatypes in both 32 and 64 bit
- *
-*/
+ * main - Entry point
+ * Return: 0 => successful exit
+ */
 
 int main(void)
 {
