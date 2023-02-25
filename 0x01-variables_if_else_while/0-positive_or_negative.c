@@ -3,11 +3,10 @@
 /* more headers goes there */
 #include <stdio.h>
 /*
- * main - Entry point of the program
+ * main - Entry point
  *
- * void -no args
  *
- * Return - 0 Always Success
+ * Return : 0 on success
  */
 int main(void)
 {
