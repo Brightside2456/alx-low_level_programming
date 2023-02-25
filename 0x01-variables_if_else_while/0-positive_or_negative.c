@@ -2,12 +2,13 @@
 #include <time.h>
 /* more headers goes there */
 #include <stdio.h>
-/*
- * main - Entry point
- *
- *
- * Return : 0 on success
- */
+
+ /**
+  *  main - Entry point
+  *
+  *
+  * Return : 0 on success
+  */
 int main(void)
 {
 	int n;
