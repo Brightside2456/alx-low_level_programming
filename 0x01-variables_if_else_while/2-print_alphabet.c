@@ -1,7 +1,11 @@
 #include <stdio.h>
 
 /**
- * main : entry point
+ * main : Entry point of code
+ *
+ *
+ *
+ *
  *
  * Return : 0 on successfull completions
  *
