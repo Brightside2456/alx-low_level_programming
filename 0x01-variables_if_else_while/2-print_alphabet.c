@@ -3,7 +3,8 @@
 /**
  * main : entry point
  *
- * Return : 0 on success
+ * Return : 0 on successfull completions
+ *
  */
 
 int main(void)
