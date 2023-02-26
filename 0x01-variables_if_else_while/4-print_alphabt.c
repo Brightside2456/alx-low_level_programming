@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point of code
+ * main - entry point of code
  *
  * Reeturn: 0 on success
  */
@@ -10,15 +10,16 @@ int main(void)
 {
 	char letter;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	for (letter = 'a'; letter <= 'z';)
 	{
 		if (letter == 'q' || letter == 'e')
 		{
-			putchar();
+			letter++;
 		}
 		else
 		{
 			putchar(letter);
+			letter++;
 		}
 
 	}
