@@ -2,11 +2,10 @@
 
 /**
  *
- * main - Entry point 
- * 
+ * main - Entry point
  * 
  * Return: 0 on success
- * 
+ *
  */
 
 int main(void)
@@ -23,5 +22,5 @@ int main(void)
 	}
 	putchar(10);
 
-	return(0);
+	return (0);
 }
