@@ -4,3 +4,5 @@ The putchar() printsonly characters. This means even if you pass an int into it,
 The puts() just prints a string text to standard output 
 Whiles the printf() prints a formatted string - the string can consist of variables and etc
 
+Whenever ypu want to assign a char to a var you always use single quotes not double
+
