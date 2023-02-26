@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 /**
- * main : Entry point of code
+ * main - Entry point of code
  *
  *
  *
  *
  *
- * Return : 0 on successfull completions
+ * Return: 0 on successfull completions
  *
  */
 
