@@ -9,6 +9,7 @@ int main(void)
 {
 	int i;
 	int j;
+	int temp;
 
 	for (i = 48; i <= 57;)
 	{
@@ -16,6 +17,16 @@ int main(void)
 		{
 			if (i == j)
 			{
+				j++;
+				temp = i;
+				i = j;
+				j = temp;
+			}
+			else if (i == j)
+			{
+				temp = j;
+				j = i;
+				i = temp;
 				j++;
 			}
 			else
@@ -30,6 +41,6 @@ int main(void)
 		i++;
 	}
 	putchar(10);
-
+;
 	return (0);
 }
