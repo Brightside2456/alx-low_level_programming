@@ -1,27 +1,27 @@
 #include <stdio.h>
 
 /**
- * main - Entry pooint
+ * main - Entry point
  *
  * Return: 0 on success
  */
 
 int main(void)
 {
-	int num;
+	int n = '0';
 
-	num = 48;
-
-	while (num <= 57)
+	while (n <= '9')
 	{
-		putchar(num);
-		putchar(32);
-		putchar(44);
-		num++;
+		putchar(n);
+
+		if (n != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
+
+		n++;
 	}
-	putchar(36);
-	putchar(10);
-
-	return (0);
-
+		putchar('\n');
+		return (0);
 }
