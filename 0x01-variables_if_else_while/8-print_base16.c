@@ -8,14 +8,20 @@
 
 int main(void)
 {
+	int num;
 	char letter;
 
-	letter = 'z';
+	letter = 'a';
 
-	while (letter >= 'a')
+	for (num = 49; num <= 57;)
+	{
+		putchar(num);
+		num++;
+	}
+	while (letter <= 'f')
 	{
 		putchar(letter);
-		letter--;
+		letter++;
 	}
 	putchar(10);
 
