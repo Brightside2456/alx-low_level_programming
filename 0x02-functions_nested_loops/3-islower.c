@@ -10,19 +10,16 @@
 
 int _islower(int c)
 {
-	int i;
 	int value;
 
-	for (i = 97; i <= 122; i++)
+	if (c >= 97 && c <= 122)
 	{
-		if (c == i)
-		{
-			value = 1;
-		}
-		else
-		{
-			value = 0;
-		}
+		value = 1;
 	}
+	else
+	{
+		value = 0;
+	}
+
 	return (value);
 }
