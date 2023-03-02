@@ -3,6 +3,8 @@
 /**
  * _isalpha - a created function to check for an alphabetic character
  *
+ * @c: the character to be chaecked on
+ *
  * Return: 0 on success
  */
 
