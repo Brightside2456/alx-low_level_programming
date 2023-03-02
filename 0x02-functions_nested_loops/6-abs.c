@@ -2,7 +2,7 @@
 
 /**
  * _abs - return the abs val of a number
- * @int: the datatype to store the value
+ * @c: the datatype to store the value
  * Return: int on success
  */
 
