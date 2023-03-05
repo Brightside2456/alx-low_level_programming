@@ -5,28 +5,28 @@
  *
  * @void: no parameters
  *
- * return: 0 on sucess
+ * Return: 0 on sucess
  */
 
 int main(void)
 {
-	int a;
-	int b;
+	long long a;
+	long long b;
 	int limit;
-	int c;
+	long long c;
 
 	a = 1;
 	b = 2;
 
-	printf("%d\n", a);
+	printf("%lld, %lld\n", a, b);
 
-	for (limit = 1; limit <= 50; limit++)
+	for (limit = 3; limit <= 50; limit++)
 	{
-		printf("%d\n", b);
-
 		c = a + b;
+		printf(", %lld", c);
 		a = b;
 		b = c;
 	}
+	printf("\n");
 	return (0);
 }
