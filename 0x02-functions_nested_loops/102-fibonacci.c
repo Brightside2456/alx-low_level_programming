@@ -18,7 +18,7 @@ int main(void)
 	a = 1;
 	b = 2;
 
-	printf("%lld, %lld\n", a, b);
+	printf("%lld, %lld", a, b);
 
 	for (limit = 3; limit <= 50; limit++)
 	{
