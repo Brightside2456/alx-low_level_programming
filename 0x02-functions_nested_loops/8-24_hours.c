@@ -1,33 +1,32 @@
 #include "main.h"
 
 /**
- * jack_bauer - Func to prin every minute of the day
- * @void: no return value
- * Return : void
+ * jack_bauer - func to print all minutes in 24 hrs
+ *
+ * @void: no params
+ *
+ * Return: void
+ *
  */
 
 void jack_bauer(void)
 {
-	int i;
-	int j;
-	int k;
-	int l;
+	int h = 0;
+	int m = 0;
 
-	for (i = 0; i <= 2; i++)
+	while (h < 24)
 	{
-		for (j = 0; j <= 3; j++)
+		m = 0;
+		while (m < 60)
 		{
-			for (k = 0; k <= 5; k++)
-			{
-				for (l = 0; l <= 9; l++)
-				{
-					_putchar(i);
-					_putchar(j);
-					_putchar(':');
-					_putchar(k);
-					_putchar(l);
-				}
-			}
+			_putchar((h / 10) + '0');
+			_putchar((h % 10) + '0');
+			_putchar(':');
+			_putchar((m / 10) + '0');
+			_putchar((m % 10) + '0');
+			_putchar('\n');
+			m++;
 		}
+		h++;
 	}
 }
