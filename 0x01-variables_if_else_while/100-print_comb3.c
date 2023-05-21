@@ -24,11 +24,6 @@ int main(void)
 			{
 				if (m > n)
 				{
-					/*
-						int o = n + m;
-						int p = m + n;
-						printf("n: %d\nm: %d\n\n", o, p);
-					*/
 					putchar(n);
 					putchar(m);
 					if (n >= '8' &&  m >= '9')
