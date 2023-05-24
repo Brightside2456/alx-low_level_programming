@@ -9,19 +9,21 @@
 int _islower(int c)
 {
 	int letter;
-	int returnval;
+	int retVal;
 
 	letter = 'a';
 	while (letter <= 'z')
 	{
 		if (c == letter)
 		{
-			returnval = 1;
+			retVal = 1;
 		}
 		else
 		{
-			returnval = 0;
+			retVal = 0;
 		}
+
+		letter++;
 	}
-	return (returnval);
+	return (retVal);
 }
