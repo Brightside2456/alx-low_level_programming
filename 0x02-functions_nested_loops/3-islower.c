@@ -12,15 +12,13 @@ int _islower(int c)
 	int retVal;
 
 	letter = 'a';
+	retVal = 0;
 	while (letter <= 'z')
 	{
 		if (c == letter)
 		{
 			retVal = 1;
-		}
-		else
-		{
-			retVal = 0;
+			break;
 		}
 
 		letter++;
