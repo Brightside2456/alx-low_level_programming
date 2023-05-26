@@ -8,7 +8,7 @@
  */
 int print_last_digit(int c)
 {
-	char last_digit;
+	int last_digit;
 
 	if (c < 0)
 	{
