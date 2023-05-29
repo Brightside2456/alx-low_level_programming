@@ -11,19 +11,23 @@ void jack_bauer(void)
 	int tens_min;
 	int ones_min;
 
-	for (ones_min = 0; ones_min <= 2; ones_min++)
+	for (tens_hour = 0; tens_hour <= 2; tens_hour++)
 	{
-		for (tens_min = 0; tens_min <= 3; tens_min++)
+		for (ones_hour = 0; ones_hour <= 9; ones_hour++)
 		{
-			for (tens_hour = 0; tens_hour <= 5; tens_hour++)
+			if ((tens_hour == 2) && (ones_hour == 4))
 			{
-				for (ones_hour = 0; ones_hour <= 9; ones_hour++)
+				break;
+			}
+			for (tens_min = 0; tens_min <= 5; tens_min++)
+			{
+				for (ones_min = 0; ones_min <= 9; ones_min++)
 				{
-					_putchar('0' + ones_min);
-					_putchar('0' + (tens_min));
+					_putchar('0' + (tens_hour % 10));
+					_putchar('0' + (ones_hour % 10));
 					_putchar(':');
-					_putchar('0' + (tens_hour));
-					_putchar('0' + (ones_hour));
+					_putchar('0' + (tens_min));
+					_putchar('0' + (ones_min));
 					_putchar('\n');
 				}
 			}
