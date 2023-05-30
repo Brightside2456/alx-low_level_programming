@@ -1,27 +1,25 @@
-#include "main.h"
-/**
- * print_last_digit - Function to find the last digit
- *
- * @c: value whose last digit is to be found
- *
- * Return: value of last digit
- */
-int print_last_digit(int c)
-{
-	int last_digit;
+#include "holberton.h"
 
-	if (c < 0)
+/**
+ * print_last_digit - func to prints and return the last digit of a number
+ *
+ * @n: number to determine its last digit
+ *
+ * Return: l last digit
+ */
+
+int print_last_digit(int n)
+{
+	int l = n % 10;
+	
+	if (l >= 0)
 	{
-		last_digit = (-1 * c) % 10;
+		_putchar(l + '0');
+		return (l);
 	}
-	if (c == 0)
+	else
 	{
-		last_digit = 0;
+		_putchar(-l + '0');
+		return (-l);
 	}
-	else if (c > 0)
-	{
-		last_digit = c % 10;
-	}
-	_putchar(last_digit + '0');
-	return (last_digit);
 }
