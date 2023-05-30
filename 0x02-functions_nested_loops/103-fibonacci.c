@@ -1,27 +1,27 @@
 #include <stdio.h>
-#include "main.h"
 /**
  * main - Entry point
  *
- * Return: 0 on correct completion
+ * Return: 0 on success
  */
+
 int main(void)
 {
-	long int num1 = 1;
-	long int num2 = 2;
-	long int total;
-	long int sum;
+	int total = 0;
+	int num1 = 1;
+	int num2 = 2;
+	int m = 0;
 
-	while (sum <= 4000000)
+	while (m <= 4000000)
 	{
 		if (num2 % 2 == 0)
 		{
 			total += num2;
 		}
-		sum = num1 + num2;
+		m = num1 + num2;
 		num1 = num2;
-		num2 = sum;
+		num2 = m;
 	}
-	printf("%ld\n", total);
-	return (0);
+	printf("%d\n", total);
+	return 0;
 }
