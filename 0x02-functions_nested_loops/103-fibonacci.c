@@ -23,5 +23,5 @@ int main(void)
 		num2 = m;
 	}
 	printf("%d\n", total);
-	return 0;
+	return (0);
 }
