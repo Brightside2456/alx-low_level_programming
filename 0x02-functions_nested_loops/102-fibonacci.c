@@ -7,8 +7,8 @@
  */
 int main(void)
 {
-	long int num1 = 0;
-	long int num2 = 1;
+	long int num1 = 1;
+	long int num2 = 2;
 	int i;
 
 	printf("%ld, %ld", num1, num2);
