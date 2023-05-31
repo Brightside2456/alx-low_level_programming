@@ -40,7 +40,7 @@ void print_times_table(int n)
 						_putchar('0' + (product / 10) % 10);
 					}
 					_putchar('0' + (product % 10));
-					if (num2 == n || num2 == 0)
+					if (num2 == n)
 						_putchar('\n');
 				}
 			}
