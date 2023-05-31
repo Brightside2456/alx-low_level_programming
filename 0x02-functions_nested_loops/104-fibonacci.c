@@ -9,7 +9,7 @@ int main(void)
 	long int num1 = 1;
 	long int num2 = 2;
 	long int m, i;
-	
+
 	printf("%lu, %lu", num1, num2);
 	for (i = 1; i <= 96; i++)
 	{
