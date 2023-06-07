@@ -1,1 +1,12 @@
 **##More funtions and nested loops**
+- Task 0: Created a function to chaeck for upper case letters
+- Task 1: Created function that checks for a digit (0 through 9).
+- Task 2: Wrote a function that multiplies two integers.
+- Task 3: Wrote a function that prints the numbers, from 0 to 9, followed by a new line.
+- Task 4: Created a funtion that prints the numbers, from 0 to 9, excluding 2 and 4, followed by a new line.
+- Task 5: Wrote a function that prints 10 times the numbers, from 0 to 14, followed by a new line
+- Task 6: Wrote a function that draws a straight line in the terminal.
+	- With this, the funtion prints only a new line when parameter is less than 1 or otherwise
+- Task 7: Created a function that draws a diagonal line on the terminal.
+- Task 8: Wrote a funtion that prints a figure of equal length and width with # symbol
+- Task 9: FizzBuzz
