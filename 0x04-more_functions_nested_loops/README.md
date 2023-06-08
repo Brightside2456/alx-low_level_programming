@@ -1,4 +1,4 @@
-**##More funtions and nested loops**
+**##More funtions and nested loops##**
 - Task 0: Created a function to chaeck for upper case letters
 - Task 1: Created function that checks for a digit (0 through 9).
 - Task 2: Wrote a function that multiplies two integers.
