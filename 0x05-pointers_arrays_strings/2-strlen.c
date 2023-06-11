@@ -1,5 +1,5 @@
 /**
- * _str_len - check the lenght of a string
+ * _strlen - check the lenght of a string
  *
  * @s: The string parameter
  *
