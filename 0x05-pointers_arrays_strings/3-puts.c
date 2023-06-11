@@ -3,7 +3,7 @@
  * _puts - prints a string to stdout
  * @str: the string parameter
  * Return: nothing
- */ 
+ */
 void _puts(char *str)
 {
 	int i;
