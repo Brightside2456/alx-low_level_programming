@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * is_prime_number - check if a num is a prime num
  * is_prime_number_recursive - another func
  * @n: number to check
- * Return: 1 if True, 0 if false
+ * @divisor: param
+ * Return: int
  */
 
 int is_prime_number_recursive(int n, int divisor)
@@ -24,6 +24,11 @@ int is_prime_number_recursive(int n, int divisor)
 	return (is_prime_number_recursive(n, divisor + 1));
 }
 
+/**
+ *is_prime_number - check if a num is a prime num
+ * @n: param
+ * Return: int
+ */
 int is_prime_number(int n)
 {
 	return (is_prime_number_recursive(n, 2));
