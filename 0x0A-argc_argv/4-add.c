@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
 	int i;
 	int product;
 	int num;
+
 	if (argc > 1)
 	{
 		product = 1;
