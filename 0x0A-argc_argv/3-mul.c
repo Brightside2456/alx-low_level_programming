@@ -17,21 +17,29 @@ int main(int argc, char *argv[])
 	int num;
 
 	product = 1;
-	for (i = 1; i < argc; i++)
+	if (argc > 1)
 	{
-		num = atoi(argv[i]);
-		if (num != 0)
+		for (i = 1; i < argc; i++)
 		{
 			num = atoi(argv[i]);
-			product = product * num;
+			if (num != 0)
+			{
+				num = atoi(argv[i]);
+				product = product * num;
+			}
+			else
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
+		printf("%d\n", product);
+		return (0);
 	}
-	printf("%d\n", product);
+	else
+	{
+		printf("Error\n");
 
-	return (0);
+		return (1);
+	}
 }
