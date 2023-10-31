@@ -22,7 +22,7 @@ char *_strdup(char *str)
 	{
 		i++;
 	}
-	if (i < 1)
+	if (str[0] == '\0' || i < 1)
 	{
 		return (NULL);
 	}
@@ -36,6 +36,10 @@ char *_strdup(char *str)
 	for (j = 0; j < i; j++)
 	{
 		array[j] = str[j];
+	}
+	if (array[0] == '\0')
+	{
+		return (NULL);
 	}
 	return (array);
 }
