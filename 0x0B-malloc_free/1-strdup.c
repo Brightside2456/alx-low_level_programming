@@ -22,10 +22,15 @@ char *_strdup(char *str)
 	{
 		i++;
 	}
+	if (i < 1)
+	{
+		return (NULL);
+	}
 
-	array = (char *)malloc(sizeof(char) * (i + 1));
+	array = malloc(sizeof(char) * i);
 	if (array == NULL)
 	{
+		free(array);
 		return (NULL);
 	}
 	for (j = 0; j < i; j++)
