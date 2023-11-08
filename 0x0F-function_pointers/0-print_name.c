@@ -12,4 +12,6 @@ void print_name(char *name, void (*f)(char *))
 
 	func = f;
 	func(name);
+
 }
+
