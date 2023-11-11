@@ -27,7 +27,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		if ((i + 1) == n)
 			break;
-		printf("%s", separator);
+		if (separator == NULL)
+			;
+		else
+			printf("%s", separator);
 	}
 	printf("\n");
 }
