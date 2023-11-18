@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 /**
- * add_node - add a new node to the list 
+ * add_node - add a new node to the list
  * @head: The address of the head node
  * @str: the string to be added
  * Return: the address of the new element
