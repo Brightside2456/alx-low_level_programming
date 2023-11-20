@@ -1,7 +1,6 @@
 #include "lists.h"
 #include <string.h>
 #include <stdlib.h>
-
 /**
  * add_node_end - add a node to the end of another node
  * @head: pointer that points to the head of the list node
@@ -13,22 +12,27 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *first, *end;
 
 	first = malloc(sizeof(list_t));
-	if (!first)
+
+	if (first == NULL)
 		return (NULL);
-	*end = *first;
 	first->str = strdup(str);
+	if (first->str == NULL)
+	{
+		free(first);
+		return (NULL);
+	}
+
 	first->len = strlen(str);
 	first->next = NULL;
 
 	if (*head == NULL)
-	{
 		*head = first;
-		return (first);
-	}
-	while (end->next)
+	else
 	{
-		end = end->next;
+		end = *head;
+		while (end->next)
+			end = end->next;
+		end->next = first;
 	}
-	end->next = first;
-	return(first);
+	return (first);
 }
