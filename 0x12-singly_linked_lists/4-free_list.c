@@ -3,7 +3,7 @@
 /**
  * free_list - free a list_t type list
  * @head: the head pointer of a list
- * @Return: Nothing
+ * Return: Nothing
  */
 void free_list(list_t *head)
 {
